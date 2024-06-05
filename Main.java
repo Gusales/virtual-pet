@@ -34,7 +34,6 @@ public class Main {
                     break;
                 case '4':
                     int confirmarSair = JOptionPane.showConfirmDialog(null, "Deseja realmente sair do seu bixinho virtual?", "Realmente deseja sair?", JOptionPane.OK_CANCEL_OPTION);
-                    System.out.println(confirmarSair);
                     if (confirmarSair == 0){
                         JOptionPane.showMessageDialog(null, "Adeus, amigo :(");
                         return;
