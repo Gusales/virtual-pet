@@ -14,7 +14,7 @@ public class Main {
 
         Pet pet = new Pet(nomePet);
         while(true){
-            String mensagemEscolha = "\n Escolha uma ação: \n 1. Alimentar " + nomePet + "\n 2. Brincar com " + nomePet + "\n 3. Verificar o status do Pet" + "\n 4. Sair do Virtual PET";
+            String mensagemEscolha = "\n Escolha uma ação: \n 1. Alimentar " + nomePet + "\n 2. Brincar com " + nomePet + "\n 3. Verificar o status do Pet" + "\n 4. Sair do Virtual PET" + "\n 5. Deixar seu bixinho descansar!";
 
             String escolha = JOptionPane.showInputDialog(mensagemEscolha);
             if(escolha.isEmpty()){
@@ -38,6 +38,8 @@ public class Main {
                         JOptionPane.showMessageDialog(null, "Adeus, amigo :(");
                         return;
                     }
+                case '5':
+                    pet.descansar();
             }
         }
     }
